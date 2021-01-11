@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <link rel="stylesheet" href="style.css">
+		<title>Game of Thrones - Rating</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Website about fantasy drama show Game of Thrones">
+		<meta name="keywords" content="html, css, got, show, characters, locations">
+		<meta name="author" content="Mario Marković">
+		<meta name="viewport" content="width=device-width, initial-scale=0">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	</head>
+<body>
+    <header>
+        <div class="cover"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="rating.html">Rating</a></li>
+				<li><a href="locations.html">Locations</a></li>
+				<li><a href="cast.html">Cast</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <h1>Rate the show</h1>
+		<div id="contact">
+			<form action="/" id="contact_form" name="contact_form" method="POST">
+				<label for="username">Username *</label>
+				<input type="text" id="username" name="username" placeholder="Username.." required>
+
+				<label for="lname">Your E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+				  <option value="">Please select</option>
+				  <option value="US">United States</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="GB">Great Britan</option>
+				  <option value="DE">Germany</option>
+				</select><br>
+				<div>
+				<label for="subject">Review</label>
+				<textarea id="subject" name="subject" placeholder="Write review about the show..." style="height:200px"></textarea>
+				</div>
+				<fieldset class="rating">
+					<legend>Rate the show:</legend>
+					<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+					<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+					<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+					<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+					<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+				</fieldset><br>
+				<div><input type="submit" value="Submit"></div>
+			</form><br>
+		</div>
+    </main>
+	<footer>
+		<p>Copyright &copy; 2021 Mario Marković. <a href="https://github.com/mmarkovic97?tab=repositories" target="_blank"><img src="img/github.png" title="Github" alt="Github"></a></p>
+	</footer>
+</body>
+</html>
